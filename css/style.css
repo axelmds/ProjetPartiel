@@ -1,0 +1,910 @@
+@import "normalize.css";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+html {
+   font-size: 100%; /* permet de s'adapter à la police de l'utilisateur */
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+ul, ol {
+   margin: 0;
+   padding: 0;
+}
+li {
+   list-style-type: none;
+}
+figure {
+   margin: 0;
+}
+a {
+   text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/* --------------------------------------------- */
+/* COMMONS */
+/* --------------------------------------------- */
+
+body {
+   font: .9rem/1 'Segoe UI', sans-serif;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+
+.block-header{
+  background-image: linear-gradient(to right, #E9DA24, #F06F5C);
+  max-height: 20%;
+}
+
+.block-header .inner-logo{
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-header .inner-logo .logo{
+  display: block;
+  max-width: 8%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right:5rem;
+}
+
+.block-header .inner-logo .reseaux{
+  display: flex;
+  padding-top: 2rem;
+  max-width: 17%;
+  padding-left: 4rem;
+}
+
+.block-header .reseaux .rs.instagram,.rs.twitter{
+  padding-left: 1.5rem;
+}
+
+.block-header .inner-logo .userheader{
+  margin-right: 1.2rem;
+  padding: 2rem;
+}
+
+/* --------------------------------------------- */
+/* NAV */
+/* --------------------------------------------- */
+
+.block-nav{
+  background: white;
+}
+
+.block-nav .inner-nav{
+  max-width: 100%;
+  margin: auto;
+ display: flex;
+ justify-content: center;
+}
+
+
+.block-nav .menu{
+  padding-top: .5rem;
+  overflow: hidden;
+  display: flex;
+  max-width: 100%;
+}
+
+.block-nav .menu li{
+  list-style: none;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.block-nav .menu li:first-child{
+  border-left: 0;
+}
+
+.block-nav .menu a{
+  color: black;
+  font: 1rem Arial, sans-serif;
+  text-transform: uppercase;
+  padding: .5rem .5rem;
+  display: block;
+  transition: background-color .5s;
+}
+
+.block-nav .menu a:hover{
+  background-color: #EA3D3D;
+  color: white;
+}
+
+/* --------------------------------------------- */
+/* BODY */
+/* --------------------------------------------- */
+
+/* --------------------------------------------- */
+/* INSCRIPTION */
+/* --------------------------------------------- */
+
+.block-form .inner{
+  max-width: 80%;
+  margin: auto;
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.block-form .formulaire .form-inscription{
+  width: 60%;
+  border-collapse: separate;
+  table-layout: fixed;
+  border-spacing:5rem 5rem;
+}
+
+.block-form .titre-inscription{
+  color: black;
+  font: 3.5rem Claudia Personal Use, Arial, sans-serif;
+  padding-top: 5rem;
+}
+
+.block-form .inner .erreur-inscription{
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.block-form .inner .tableau-inscription{
+  padding-top: 1rem;
+}
+
+.formulaire .tableau-inscription .logoinscription{
+  box-sizing: border-box;
+  text-align: center;
+  width: 4rem;
+  margin-right: 3rem;
+}
+
+.formulaire .tableau-inscription .confirmmail{
+  width: 4.4rem;
+  padding-left: .3rem;
+}
+
+.formulaire .tableau-inscription .confirmmdp{
+  width: 3.5rem;
+}
+
+.formulaire .tableau-inscription .input-inscription{
+  height: 2rem;
+  width: 15rem;
+  border-color: black;
+  border-width: .1rem;
+  border-radius: 1rem;
+  background-color: #f7f7f7;
+  padding-left: 1rem;
+  font: 1rem Roboto, Arial, sans-serif;
+  color: black;
+}
+
+.formulaire .tableau-inscription input::placeholder{
+  color: #c6c6c6;
+  font: 1rem Roboto, Arial, sans-serif;
+  font-style: italic;
+}
+
+.form-inscription .formulaire .inscrit{
+  padding-top: 1.5rem;
+  text-align: right;
+}
+
+.form-inscription .formulaire input[type="submit"]{
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ce3310;
+  font: 1rem Roboto, Arial, sans-serif;
+  color: white;
+  transition: box-shadow .2s;
+}
+
+.form-inscription .formulaire input[type="submit"]:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+/* --------------------------------------------- */
+/* CONNEXION */
+/* --------------------------------------------- */
+
+.block-form .formulaire .form-connexion{
+  width: 60%;
+  border-collapse: separate;
+  table-layout: fixed;
+  border-spacing: 5rem 5rem;
+}
+
+.block-form .titre-connexion{
+  color: black;
+  font: 3.5rem Claudia Personal Use, Arial, sans-serif;
+  padding-top: 5rem;
+}
+
+.block-form .inner .erreur-connexion{
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.block-form .inner .tableau-connexion{
+  padding-top: 1rem;
+}
+
+.formulaire .tableau-connexion .logoconnexion{
+  text-align: center;
+  width: 4rem;
+  margin-right: 3rem;
+}
+
+.formulaire .tableau-connexion .input-connexion{
+  height: 2rem;
+  width: 15rem;
+  border-color: black;
+  border-width: .1rem;
+  border-radius: 1rem;
+  background-color: #f7f7f7;
+  padding-left: 1rem;
+  font: 1rem Roboto, Arial, sans-serif;
+  color: black;
+}
+
+.formulaire .tableau-connexion input::placeholder{
+  color: #c6c6c6;
+  font: 1rem Roboto, Arial, sans-serif;
+  font-style: italic;
+}
+
+.form-connexion .formulaire .connecté{
+  padding-top: 1.5rem;
+  text-align: right;
+}
+
+.form-connexion .formulaire input[type="submit"]{
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ce3310;
+  font: 1rem Roboto, Arial, sans-serif;
+  color: white;
+  transition: box-shadow .2s;
+}
+
+.form-connexion .formulaire input[type="submit"]:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+/* --------------------------------------------- */
+/* INDEX */
+/* --------------------------------------------- */
+
+.block-accueil .inner{
+  max-width: 80%;
+  margin: auto;
+}
+
+.block-accueil .inner .bienvenue{
+  text-align: center;
+  padding-top: 5rem;
+  font: 3.5rem Claudia Personal Use, Arial, sans-serif;
+}
+
+.block-accueil .inner .searching{
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.block-accueil .searching a{
+  border: solid 2px;
+  border-radius: 50px;
+  padding: 1rem;
+  color: #D5270E;
+  font: 2.5rem Roboto, Arial, sans-serif;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+.block-accueil .searching a:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+  background-color: #D5270E;
+  color: white;
+}
+
+.block-accueil .inner .trait-index{
+  border: solid 1px;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.block-accueil .inner .trait1{
+  margin-top: 4rem;
+}
+
+.block-accueil .inner .trait2{
+  margin-top: 5rem;
+}
+
+.block-accueil .whoweare .titre-whoweare{
+  padding-top: 5rem;
+  text-align: center;
+  color: #D5270E;
+  text-transform: uppercase;
+  font: 1.5rem Roboto, Arial, sans-serif;
+}
+
+.block-accueil .whoweare .description{
+  padding-top: 2rem;
+}
+
+.block-accueil .description p{
+  font: 1.2rem Roboto, Arial, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+/* --------------------------------------------- */
+/* TROUVER LE KDO */
+/* --------------------------------------------- */
+
+.block-search .inner{
+  max-width: 80%;
+  margin: auto;
+}
+
+.block-search  .inner .findsearch{
+  padding-top: 4rem;
+}
+
+.block-search .findsearch a{
+  border: solid 2px;
+  border-radius: 50px;
+  padding: 1rem;
+  background-color: #D5270E;
+  color: white;
+  font: 1rem Roboto, Arial, sans-serif;
+  transition: box-shadow .2s;
+}
+
+.block-search .findsearch a:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+
+.block-search .inner .title-search{
+  padding-top: 3rem;
+  text-align: center;
+  font: 3rem Claudia Personal Use, Arial, sans-serif;
+}
+
+.block-search .title-search strong{
+  text-transform: uppercase;
+  color: #D5270E;
+  font: 4rem Roboto, Arial, sans-serif;
+}
+
+.block-search .inner .explication{
+  padding-top: 2rem;
+}
+
+.block-search .explication p{
+  text-align: center;
+  font: 1.2rem Roboto, Arial, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.block-search .inner .list{
+  padding-top: 5rem;
+  text-decoration: underline;
+  font: 1.5rem Roboto, Arial, sans-serif;
+}
+
+.block-search .inner .listsearch{
+  padding-top: 1rem;
+}
+
+.block-search .inner .list-search{
+  padding-top: 2rem;
+}
+
+.block-search .listsearch label{
+  font: 1rem Roboto, Arial, sans-serif;
+}
+
+.block-search .listsearch ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.block-search .listsearch li{
+  padding-right: 1rem;
+  flex-basis: 10%;
+}
+
+.block-search .listsearch input{
+  position: absolute;
+  left: -9999px;
+}
+
+.block-search .listsearch label {
+  display: block;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border: .1rem solid #D5270E;
+  border-radius: 8rem;
+  color: #D5270E;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+.block-search .listsearch label:hover, input:focus + label {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+.block-search .listsearch input[type="checkbox"]:checked + label {
+  background-color: #D5270E;
+  color: white;
+}
+
+.block-search .inner .savefind{
+  padding-top: 5rem;
+}
+
+.block-search .savefind ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block-search .savefind li{
+  padding: 1rem;
+}
+
+
+.block-search .savefind a{
+  cursor: pointer;
+  display: block;
+  padding: 1rem;
+  border: .1rem solid #D5270E;
+  border-radius: 2rem;
+  border-color: #D5270E;
+  background-color: white;
+  color: #D5270E;
+  font: 1rem Roboto, Arial, sans-serif;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+.block-search .savefind a:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+  background-color: #D5270E;
+  color: white;
+}
+
+/* --------------------------------------------- */
+/* MYKDOS */
+/* --------------------------------------------- */
+
+.block-mykdos .inner{
+  max-width: 80%;
+  margin: auto;
+}
+
+.block-mykdos .myselect .title-myselect{
+  text-align: center;
+  padding-top: 10rem;
+  font: 5rem Claudia Personal Use, Arial, sans-serif;
+}
+
+.block-mykdos .myselect .fondtitle{
+  position: absolute;
+  max-width: 80%;
+  z-index: -1;
+  top: 15rem;
+  text-align: center;
+  margin: 0;
+}
+
+.block-mykdos .block-wrapper{
+  margin-top: 10rem;
+}
+
+.block-wrapper .ligne {
+ max-width: 80%;
+ margin: auto;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ padding-bottom: 2rem;
+}
+
+.block-wrapper .card {
+ position: relative;
+ transition: translate(-50%, -50%);
+ width: 575px;
+ height: 285px;
+ transform-style: preserve-3d;
+ perspective: 600px;
+ transition: 0.5s;
+ text-align: center;
+ flex-basis: 22%;
+}
+
+.block-wrapper .card .front {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 65%;
+ background: #fff;
+ backface-visibility: hidden;
+ transform: rotateY(0deg);
+ transition: 0.5s;
+}
+
+.block-wrapper .card:hover .front {
+ transform: rotateY(-180deg);
+}
+
+.block-wrapper .card .back {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #fff1d1;
+ backface-visibility: hidden;
+ transform: rotateY(180deg);
+ transition: 0.5s;
+}
+
+.block-wrapper .card:hover .back {
+ transform: rotateY(0deg);
+}
+
+.block-wrapper .card .back .details {
+ position: absolute;
+ top: 47%;
+ transform: translateY(-50%);
+ left: 0;
+ width: 100%;
+ text-align: center;
+ padding: 20px;
+ box-sizing: border-box;
+}
+
+.block-wrapper .card .details p{
+  color: black;
+  font: 1rem Roboto, Arial, sans-serif;
+}
+
+.block-wrapper .card .details p span{
+  color: #891f13;
+  font-size: 1.5rem;
+}
+
+.block-wrapper .card .details a{
+  color: #545454;
+  text-transform: uppercase;
+  font: 1.2rem Roboto, Arial, sans-serif;
+  transition: text-decoration .5s;
+}
+
+.block-wrapper .card .details a:hover{
+  text-decoration: underline;
+}
+
+/* --------------------------------------------- */
+/* PROFIL */
+/* --------------------------------------------- */
+
+.block-profil .inner{
+  max-width: 80%;
+  margin: auto;
+}
+
+.block-profil .inner .titleprofil{
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.block-profil .titleprofil .pdp{
+  height: 15rem;
+  width: 15rem;
+}
+
+.block-profil .titleprofil .pseudo{
+  padding-top: 2rem;
+  font: 4rem Roboto, Arial, sans-serif;
+}
+
+.block-profil .titleprofil .mailuser{
+  color: #D5270E;
+  font: 1rem Roboto, Arial, sans-serif;
+  font-style: italic;
+}
+
+.block-profil .inner .optionprofil{
+  padding-top: 4rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.block-profil .optionprofil .my{
+  flex-basis: 49.7%;
+  display: flex;
+  align-items: center;
+  border: solid 2px;
+  border-color: #D5270E;
+  height: 250px;
+  width: 408px;
+  margin-bottom: .5rem;
+}
+
+.block-profil .optionprofil .my .backgroundimg{
+  position: relative;
+  z-index: -1;
+  height: 237px;
+  width: 243px;
+  background-color: #fff;
+  opacity: .5;
+}
+
+.block-profil .optionprofil .mysearch .backgroundimg{
+  height: 237px;
+  width: 100px;
+}
+
+.block-profil .optionprofil .my a{
+  color: black;
+  font: 2rem Roboto, Arial, sans-serif;
+}
+
+.block-profil .inner .deconnect{
+  display: flex;
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+
+.block-profil .inner .deconnect a{
+  cursor: pointer;
+  display: block;
+  padding: 1rem;
+  border: .1rem solid #D5270E;
+  border-radius: 2rem;
+  border-color: #fff;
+  background-color: #D5270E;
+  color: #fff;
+  font: 1rem Roboto, Arial, sans-serif;
+  transition: box-shadow .2s;
+}
+
+.block-profil .inner .deconnect a:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+/* --------------------------------------------- */
+/* SAVESEARCH */
+/* --------------------------------------------- */
+
+.block-savesearch .inner{
+  max-width: 80%;
+  margin: auto;
+}
+
+.block-savesearch .inner .retourprofil{
+  padding-top: 4rem;
+}
+
+.block-savesearch .retourprofil a{
+  border: solid 2px;
+  border-radius: 50px;
+  padding: 1rem;
+  background-color: #D5270E;
+  color: white;
+  font: 1rem Roboto, Arial, sans-serif;
+  transition: box-shadow .2s;
+}
+
+.block-savesearch .retourprofil a:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+.block-savesearch .inner .title-savesearch{
+  padding-top: 3rem;
+  text-align: center;
+  font: 3rem Claudia Personal Use, Arial, sans-serif;
+}
+
+.block-savesearch .inner .wrapper{
+  padding-top: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.block-savesearch .wrapper .savesearch{
+  flex-basis: 49.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: solid 1px;
+  border-color: grey;
+  height: 250px;
+  width: 408px;
+}
+
+.block-savesearch .wrapper .free{
+  flex-basis: 49.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: solid 1px;
+  border-color: grey;
+  height: 250px;
+  width: 408px;
+}
+
+.block-savesearch .savesearch a{
+  color: black;
+  font: 3.5rem Roboto, Arial, sans-serif;
+}
+
+.block-savesearch .free a{
+  color: grey;
+  font: 2.5rem Roboto, Arial, sans-serif;
+  font-style: italic;
+}
+
+/* --------------------------------------------- */
+/* EDITION PROFIL */
+/* --------------------------------------------- */
+
+.block-formedit .inner{
+  max-width: 80%;
+  margin: auto;
+}
+
+.block-formedit .form-editprofil .logoeditprofil{
+  max-width: 5rem;;
+}
+
+/* --------------------------------------------- */
+/* CONTACT */
+/* --------------------------------------------- */
+
+.title_contact {
+  padding-top: 5rem;
+  font: 5rem Claudia Personal Use, Arial, sans-serif;
+  text-align: center;
+}
+
+#contact_form {
+  font-family: "Claudia Personal Use";
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.row1 {
+  padding-top: 10;
+}
+
+.row2 {
+  padding-top: 50px;
+}
+
+.row3 {
+  padding-top: 50px;
+}
+
+#contact_form .submit_button {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 50px;
+  /* border-color: red; */
+  color: white;
+  background-color: #D5270E;
+  font-family: "Helvetica";
+  min-width: 10%;
+  max-width: 10%;
+  font-size: 20px;
+  border: none;
+  transition: box-shadow .2s;
+  cursor: pointer;
+}
+
+#contact_form input[type="submit"]:hover{
+ box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+/* #submit_button {
+  font-family: "Helvetica";
+  font-size: 40px;
+} */
+
+#contact_form .row .button_contact   {
+ height: 2rem;
+ width: 15rem;
+ border-color: black;
+ border-width: .1rem;
+ border-radius: 1rem;
+ background-color: #f7f7f7;
+ padding-left: 1rem;
+ margin: 20px 0;
+ font: 1rem Roboto, Arial, sans-serif;
+ color: black;
+}
+
+.formulaire .tableau-connexion input::placeholder{
+ color: #c6c6c6;
+ font: 1rem Roboto, Arial, sans-serif;
+ font-style: italic;
+}
+
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+
+footer {
+  background: linear-gradient(to right, #E9DA24, #F06F5C);
+  top: 500px;
+  margin-top: 8rem;
+  color: white;
+  border-collapse: collapse;
+  font-family: "Helvetica";
+  font-size: 22px;
+  }
+
+.footer .inner-footer {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.footer .inner-footer a{
+  color: white;
+}
+
+.footer .inner-footer .left {
+  line-height: 80px;
+  padding-left: 150px;
+}
+
+.footer .inner-footer .mid {
+  padding-left: 10px;
+  line-height: 80px;
+}
+
+.footer .inner-footer .right {
+  line-height: 80px;
+  padding-right: 150px;
+}
+
+.footer .inner-footer .rs {
+  font-size: 50px;
+  padding-right: 40px;
+}
